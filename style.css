@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    color: white;
+  }
+  *::-webkit-scrollbar{
+    width: 0px;
+  }
+  body{
+    background-image: url("snake_bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+  }
+  
+  /* Navbar design */
+  nav{
+    background: rgb(1, 170, 97);
+  }
+  nav ul li{
+    font-size: 20px;
+    padding: 20px 30px;
+  }
+
+  /* Background design */
+  .body{
+    display: flex;
+    justify-content: center;
+  }
+  #board{
+    background: linear-gradient(rgb(94, 255, 94), rgb(182, 251, 182));
+    margin-top: 40px;
+    height: 80vmin;
+    width: 80vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+  }
+
+  /* Snake design */
+  .head{
+    background: linear-gradient(rgb(255, 64, 64), rgb(151, 0, 0));
+    border: 2px solid rgb(102, 0, 0);
+    border-radius: 50%;
+  }
+  .snakeBody{
+    background: linear-gradient(rgb(227, 0, 227), rgb(130, 0, 130));
+    border: 2px solid rgb(74, 0, 74);
+    border-radius: 5px;
+  }
+  .food{
+    background: linear-gradient(rgb(76, 76, 248), rgb(0, 0, 144));
+    border: 2px solid rgb(0, 0, 51);
+    border-radius: 10px;
+  }
